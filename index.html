@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Clasificador de Media</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="welcome-banner"></div>
+<div id="lang-buttons">
+    <a href="/" class="lang-btn" id="es-btn"></a>
+    <a href="/en" class="lang-btn" id="en-btn"></a>
+</div>
+<div id="content">
+    <div id="left-tools">
+        <button id="frameBtn">
+            <p>Guardar frame</p>
+            <span class="icon">📷</span>
+        </button>
+        <button id="clipBtn">
+            <p>Proximamente</p>
+            <span class="icon">❔</span>
+        </button>
+    </div>
+    
+    <div id="tv">
+        <div id="screen">SIN ARCHIVOS CARGADOS</div>
+        <label for="folderInput" class="btn" id="cassette">
+            INGRESA FOTOS/VIDEOS
+        </label>
+        <input type="file" id="folderInput" style="display:none;" webkitdirectory multiple>
+    </div>
+
+    <div id="right-tools">
+        <div id="remote-control">
+            <span id="ir"></span>
+            <div id="remote-control-buttons">
+                <button id="saveBtn" >
+                    <p>Guardar</p>
+                    <span class="icon">💾</span>
+                </button>
+                <button id="discardBtn" >
+                    <p>Descartar</p>
+                    <span class="icon">🗑️</span>
+                </button>
+            </div>
+            <a href="https://github.com/exatoon27" id="copyright">@Exatoon27</a>
+        </div>
+    </div>
+
+</div>
+
+<script src="libs/jszip.min.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
