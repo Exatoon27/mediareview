@@ -39,6 +39,10 @@ const folderInput = document.getElementById("folderInput");
 const viewer = document.getElementById("screen");
 const cassette = document.getElementById("cassette");
 
+document.getElementById('close-welcome-btn').onclick = () => {
+    document.getElementById('welcome-banner').style.display = 'none';
+}
+
 folderInput.onclick = (e) => {
     if (folderInput.value) {
         e.preventDefault();
